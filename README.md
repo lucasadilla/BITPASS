@@ -56,9 +56,7 @@ React was used to create dynamic and interactive elements within the app, making
 generate and analyze their passwords. We chose React because one of our group members had experience using
 it to build user interfaces.
 
-## What I learned
 
----
 ### Electron:
 
 - **Cross-platform development:** _This provided an opportunity to learn about the different platforms
@@ -100,51 +98,6 @@ the user to learn about the strengths, weaknesses, and improvements they can mak
 </a> 
 
 
-## Code Sample
-
----
-Here is some code I wrote using state variables for the first time in the early 
-hours of the morning ([App.js](src/App.js)):
-```js
-// Creating state variables
-const [strength, setStrength] = useState(8);
-const [length, setLength] = useState(8);
-const [specialChar, setSpecialChar] = useState(false);
-const [numbers, setNumbers] = useState(false);
-const [password, setPassword] = useState(generatePassword(8, false, false))
-const [noun, setNoun] = useState("Weak");
-const [crackTime, setCrackTime] = useState(calculateTimeToCrack(password));
-
-// Each component in our UI calls their respective handler to update their own values
-const handleTextChange = (e) => {
-    let val = e.target.value
-    setLength(val.length)
-    setPassword(val)
-}
-const handleSpecial = (e) => setSpecialChar(e.target.checked)
-const handleNumbers = (e) => setNumbers(e.target.checked)
-const handleSliderChange = (e) => setLength(e.target.value)
-const onGenerate = () => setPassword(generatePassword(length, numbers, specialChar))
-
-/* 
-This event handler watches all the state variables so when any are changed, 
-a general change handler goes through and updates all of the associated components. 
-This creates a UI that is responsive to the user's every action.
-*/ 
-useEffect(() => {
-    handleChange();  // Call general change handler
-}, [password, numbers, specialChar, length])
-
-const handleChange = () => {
-    // Update strength value and decriptor, crack time, and checkboxes (planned)
-}
-```
-## Future Goals
-
----
-I would like to build natural language processing into **bitpass** in order to analyze passwords on more than the single
-metric we have right now, which is brute forcing. The app will then feature both a strength bar for each type of password analysis
-I will probably use some fork of the natural language password strength estimator `zxcvbn.js`
 
 ## Collaborators
 
