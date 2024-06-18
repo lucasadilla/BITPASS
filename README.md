@@ -1,6 +1,6 @@
 
 <a href="https://devpost.com/software/bit-pass">
-  <img src="img/bitpass_title.png" alt="bitpass - Welcome" width="220">
+  <img src="bitpass_title.png" alt="bitpass - Welcome" width="220">
 </a>
 
 ## Running the program
@@ -89,14 +89,14 @@ the user to learn about the strengths, weaknesses, and improvements they can mak
 ---
 ### bitpass Generation - Simple, complex
 <a href="https://devpost.com/software/bit-pass" target="_blank">
-  <img width="350px" src="img/simple_gen.png" alt="bitpass - Simple password">
-  <img width="350px" src="img/complex_gen.png" alt="bitpass - Complex password">
+  <img width="350px" src="simple_gen.png" alt="bitpass - Simple password">
+  <img width="350px" src="complex_gen.png" alt="bitpass - Complex password">
 </a>
 
 ### bitpass Analysis - Simple, complex user passwords
 <a href="https://devpost.com/software/bit-pass" target="_blank">
-  <img width="350px" src="img/simple_ana.png" alt="bitpass - Simple user password analysis">
-  <img  width="350px" src="img/complex_ana.png" alt="bitpass - Complex user password analysis">
+  <img width="350px" src="simple_ana.png" alt="bitpass - Simple user password analysis">
+  <img  width="350px" src="complex_ana.png" alt="bitpass - Complex user password analysis">
 </a> 
 
 
